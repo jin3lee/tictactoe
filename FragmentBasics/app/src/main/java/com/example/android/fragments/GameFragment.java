@@ -1,4 +1,4 @@
-package com.josephjinsunglee.www.tictactoe;
+package com.example.android.fragments;
 
 import android.content.Context;
 import android.net.Uri;
@@ -64,7 +64,7 @@ public class GameFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_game, container, false);
+        return inflater.inflate(R.layout.layout_game, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
