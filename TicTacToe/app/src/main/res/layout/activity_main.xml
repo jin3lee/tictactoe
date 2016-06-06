@@ -14,5 +14,28 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/frameLayout_content"
-        android:background="#FF0000"></FrameLayout>
+        android:background="#FF0000"
+        android:layout_above="@+id/linearLayout"></FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button10" />
+    </LinearLayout>
 </RelativeLayout>
