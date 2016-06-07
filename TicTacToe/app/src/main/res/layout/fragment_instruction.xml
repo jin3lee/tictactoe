@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.josephjinsunglee.www.tictactoe.InstructionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Instructions\n\nTwo players can each take turns pressing on an empty box to place a piece (X or O peice).\nEach player will take turns placing their peices until a player wins or both players tie.\nA player can win if they have three of their peices in a row, either diagnoly, horizontally, or verically"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+</FrameLayout>

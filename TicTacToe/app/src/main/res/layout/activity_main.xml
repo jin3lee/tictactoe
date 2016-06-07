@@ -10,12 +10,38 @@
     tools:context="com.josephjinsunglee.www.tictactoe.MainActivity"
     android:background="#555555">
 
-    <FrameLayout
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/frameLayout_content"
-        android:background="#FF0000"
-        android:layout_above="@+id/linearLayout"></FrameLayout>
+        android:id="@+id/gameFragmentContainer"
+        android:layout_above="@+id/linearLayout">
+
+        <fragment android:name="com.josephjinsunglee.www.tictactoe.GameFragment"
+            android:id="@+id/game_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_game" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/instructionFragmentContainer"
+        android:layout_above="@+id/linearLayout"
+        android:background="#FF8800">
+
+        <fragment android:name="com.josephjinsunglee.www.tictactoe.InstructionFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_instruction"
+            android:id="@+id/instruction_fragment"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -46,13 +72,13 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/relativeLayout_settings">
+            android:id="@+id/relativeLayout_instruction">
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Settings"
-                android:id="@+id/button_setting"
+                android:text="Instruction"
+                android:id="@+id/button_instruction"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp" />
         </RelativeLayout>
